@@ -1,0 +1,27 @@
+﻿<Window x:Class="_7_TamañoTexto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_7_TamañoTexto"
+        mc:Ignorable="d"
+        Title="Tamaño texto" Height="450" Width="902">
+    <Grid>
+        <TextBlock x:Name="textoTextBlock" HorizontalAlignment="Center" Margin="0,78,0,0" TextWrapping="Wrap" Text="Desarrollo de Interfaces" VerticalAlignment="Top" FontFamily="Neue Haas Grotesk Text Pro" FontSize="48" Width="882" TextAlignment="Center"/>
+        <RadioButton Tag="36" Content="Pequeño" HorizontalAlignment="Left" Margin="55,217,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top"  FontSize="10" Checked="RadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <ScaleTransform ScaleX="4" ScaleY="4"></ScaleTransform>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton Tag="48" Content="Mediano" HorizontalAlignment="Left" Margin="335,217,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" Checked="RadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <ScaleTransform ScaleX="4" ScaleY="4"></ScaleTransform>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+        <RadioButton Tag="72" Content="Grande" HorizontalAlignment="Left" Margin="613,217,0,0" VerticalContentAlignment="Center" VerticalAlignment="Top" FontSize="10" Checked="RadioButton_Checked">
+            <RadioButton.RenderTransform>
+                <ScaleTransform ScaleX="4" ScaleY="4"></ScaleTransform>
+            </RadioButton.RenderTransform>
+        </RadioButton>
+    </Grid>
+</Window>
